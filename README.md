@@ -1,10 +1,10 @@
-# Grow base app
+# Browser detect - Grow
 
 Create a site with Grow
 
 Author: Vu Nguyen &lt;[nguyendaivu73.qb@gmail.com](nguyendaivu73.qb@gmail.com)&gt;
 
-Deploy to Netlify: [https://grow-base-app.netlify.app/](https://grow-base-app.netlify.app/)
+Deploy to Netlify: [https://browser-detect-app.netlify.app/](https://browser-detect-app.netlify.app/)
 
 ## Requirements
 
