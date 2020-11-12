@@ -1,12 +1,7 @@
 <div class="header">
-  <h1><a href="{{podspec.home.url}}">{{podspec.title}}</a></h1>
-  <div class="nav">
-    <ul class="nav__items">
-      {% for item in g.docs('pages') %}
-      <li class="nav__items__item {{"nav__items__item--active" if doc == item}}">
-          <a href="{{item.url.path}}">{{item.title}}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <div class="browser">
+    <h1 class="browser__information"></h1>
+    <p class="others__information">Loading...</p>
+    <ul class="information__list"></ul>
   </div>
 </div>

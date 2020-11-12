@@ -11,7 +11,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "webpack": "4.33.0",
-    "webpack-stream": "5.2.1"
+    "webpack-stream": "5.2.1",
+    "detect-browser": "^5.1.1",
+    "public-ip": "^4.0.2"
   },
   "scripts": {
     "start": "grow run"

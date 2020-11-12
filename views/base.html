@@ -38,27 +38,6 @@
   </head>
   <body>
     {% include "/partials/header/header.html" %}
-    <div class="wrapper">
-      {% block main %}
-        {% if doc.partials %}
-          {% for field in doc.partials %}
-            {% if not field.partial %}
-              {% continue %}
-            {% endif %}
-
-            {# Render the partial with the values in {{partial}}. #}
-            {% set partial_filename = field.partial|expand_partial %}
-            {% with partial = field %}
-              {% include partial_filename with context %}
-            {% endwith %}
-          {% endfor %}
-        {% else %}
-          {{doc.formatted|safe}}
-        {% endif %}
-      {% endblock %}
-    </div>
-    {% include "/partials/footer/footer.html" %}
-
     <script src="{{ g.static('/dist/js/composite/global.min.js').url.path }}"></script>
     {% set compositeJsFiles = [doc.view|replace('.html', '')] %}
     {% set compositeJsFiles = compositeJsFiles + (doc.composite_files if doc.composite_files else []) %}
