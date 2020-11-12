@@ -1,0 +1,16 @@
+<div class="footer">
+  <div class="nav footer__content">
+    <ul class="nav__items footer__content__brand">
+      <li class="nav__items__item">
+        <a href="{{podspec.home.url}}">{{podspec.title}}</a>
+      </li>
+    </ul>
+    <ul class="nav__items footer__content__social">
+      {% for social in podspec.meta.social %}
+        <li class="nav__items__item">
+          <a target="_blank" href="{{social.host}}{{social.username}}/">{{social.type}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
